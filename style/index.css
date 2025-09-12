@@ -22,7 +22,7 @@ input[type="button"]{
     border: none;
 }
 
-ol,ul,li{list-style: none;}
+ol,ul,li, p{list-style: none;}
 
 .gb-1{
     border: 1px solid lightgray;
@@ -36,6 +36,7 @@ ol,ul,li{list-style: none;}
     padding: 15px 0;
 }
 
+/* header */
 #header{
     width: 100%;
     height: 100px;
@@ -67,17 +68,17 @@ ol,ul,li{list-style: none;}
     height: 100%;
 }
 
-#nothing{
+#mypage{
     width: 95px;
 }
 
-#nothing ul{
+#mypage ul{
     width: 100%;
     height: 100%;
     display: flex;
 }
 
-#nothing>ul li{
+#mypage>ul li{
     width: 80%;
     height: 80%;
     flex: 1;
@@ -88,3 +89,67 @@ ol,ul,li{list-style: none;}
     height: 80px;
 }
 
+#header p{
+    width: 70px;
+    height: 70px;
+}
+
+/* menu */
+#menu{
+    width: 100%;
+    padding: 30px 0;
+}
+
+#menu li a{
+    color: #19183B;
+    font-weight: bold;
+}
+
+#menu > ul{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+#menu > ul > li{
+    position: relative;
+    text-align: center;
+} 
+
+#menu > ul > li a{
+    width: max-content;
+    height: 100%;
+    display: block;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: left;
+    line-height: 60px;
+}
+#menu > ul > li ul{
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    min-width: 100%;
+    background: #E7F2EF;
+    padding: 10px 0;
+}
+
+
+
+#menu > ul li a:hover+ul{
+    display: block;
+}
+
+#menu > ul li ul:hover{
+    display: block;
+}
+
+#menu > ul li ul li a:hover{
+    background: #A1C2BD;
+}
+
+#menu > ul li a:hover{
+    background: #A1C2BD;
+}
