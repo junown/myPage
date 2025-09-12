@@ -153,3 +153,76 @@ ol,ul,li, p{list-style: none;}
 #menu > ul li a:hover{
     background: #A1C2BD;
 }
+
+/* content */
+
+#content{
+    width: 100%;
+    display: flex;
+}
+
+#items ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* side */
+#side{
+    width: 30%;
+}
+
+#side-1 .login{
+    display: flex;
+    height: calc(100% - 20px);
+    width: 100%;
+}
+
+#side-1 .login .login-input{
+    height: calc(100% - 80px);
+    width: 100%;
+}
+
+#side-1 .login .login-input input {
+    width: 100%;
+    height: 50%;
+}
+
+#side-1 .login .login-btn{
+    width: 50px;
+    height: 100%;
+}
+
+#side-1 .login .login-btn > button{
+    width: 100%;
+    height: 100%;
+}
+
+#side-1 .login-menu ul{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    height: 20px;
+}
+
+#side-1 .login ul li{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#side-1 .login-menu ul li span::after{
+    content: "|";
+    color: #19183B;
+    margin: 0 5px;
+}
+
+#side-2 {
+    margin-top: 20px;
+}
+
+#side-2 .ad img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
