@@ -1,12 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 
-    font-family: "Noto Sans", serif;
+    font-family: "Black Han Sans", serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings:"wdth" 100;
+    font-weight: 300;
 }
 
 a{
